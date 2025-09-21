@@ -189,6 +189,12 @@ Your task:
 3. Explain difficult words or terms in simple language
 4. Highlight what's important
 5. Use clear, simple language everyone can understand
+6. Return the explanation in html+css format and make it look visually appealing and friendly to look at.
+7. Do not use ``` or any other markdown formatting or specify it as html, just return the html+css content.
+8. make sure the explanation is concise and to the point.
+9. Use visual elements like headings, lists, and highlights to improve readability.
+10. Include examples or analogies to clarify complex concepts.
+11. The screen in dark theme with light text on dark background is preferred.
 
 Make it accessible for anyone, regardless of their background."""
 
@@ -205,6 +211,7 @@ Make it accessible for anyone, regardless of their background."""
     
     try:
         response = requests.post(GEMINI_API_URL, json=data, timeout=60)
+        
         
         if response.ok:
             result = response.json()
