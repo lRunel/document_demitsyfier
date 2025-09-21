@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // Assuming API_BASE is configured in your environment variables
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_BASE = import.meta.env.VITE_API_URL || 'https://document-demitsyfier.onrender.com';
 const MAX_MB = 50;
 
 // A new, stylized component to display the analysis results
